@@ -1,0 +1,11 @@
+#movieContainer {
+    margin-top: 2rem;
+}
+.movies {
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    border:1px black solid;
+    padding:10px;
+    width:fit-content;
+}

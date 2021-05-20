@@ -1,0 +1,26 @@
+.container {
+    margin-left: 0;
+}
+.seatnum {
+    font-weight: bold;
+    word-spacing: 1rem;
+}
+i {
+    font-size: larger;
+    padding: 0.4rem;
+}
+.seat {
+    color:gold;
+}
+.seat:hover {
+    cursor:pointer;
+}
+.taken {
+    color: gray;
+}
+.taken:hover {
+    cursor:not-allowed;
+}
+.selected {
+    color:green;
+}

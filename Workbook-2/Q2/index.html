@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FS102 Workbook 2 - Lam Man Kid</title>
+    <!--Bootstrap CSS and external css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+    <h1>Question 2</h1>
+    <pre>
+Steve has upgraded to a professional email. Write a program that allows Steve
+to change his email.
+On page load, display Steve’s current email, create a “Change Email” button
+and an input field for Steve to enter his new email. Upon entering his new
+email and clicking the button, Steve’s email will change to the new email
+instantly without page refresh.
+
+(Note: Use Javascript DOM for this question. DO NOT use jQuery for this else
+marks will be deducted.)
+    </pre>
+
+    <!--Division containing Steve's current email-->
+    <div id="steveMail">Email: steve.tan@gmail.com</div>
+    <br/>
+    <!--Input to enter new email-->
+    <input type="email" class="form-control" id="newEmail" placeholder="Enter new email"><div id="msg"></div> <!--Message to confirm email change-->
+    <br/>
+    <!--Button to confirm change of new email-->
+    <button type="button" class="btn btn-dark" onclick="changeEmail()">Change Email</button>
+
+    <!--Scripts: Bootstrap and external-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

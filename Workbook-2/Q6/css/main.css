@@ -1,0 +1,12 @@
+#profileContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#profile {
+    border:1px black solid;
+    padding: 10px;
+}
+.btn {
+    margin-top: 1rem;
+}

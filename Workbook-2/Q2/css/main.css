@@ -1,0 +1,13 @@
+#newEmail {
+    background-color: lightblue;
+    border-color: black;
+    color:black;
+    width:15rem;
+}
+#msg {        /*For change confirmation msg*/
+    color: red;
+}
+.btn {
+    background-color: lightblue;
+    color:black;
+}

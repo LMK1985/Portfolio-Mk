@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FS102 Workbook 2 - Lam Man Kid</title>
+    <!--Bootstrap CSS and external css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+    <h1>Question 3</h1>
+    <pre>
+You are tasked to allow Steve to toggle visibility of his business profile and
+change his profile background color.
+
+Create 4 different buttons to toggle show/hide for each of his profile details
+respectively. Create another 2 buttons allowing Steve to change his
+background color.
+
+Button Toggle 1: Show/Hide First Name & Last Name
+Button Toggle 2: Show/Hide Email
+Button Toggle 3: Show/Hide Phone Number
+Button Toggle 4: Show/Hide Telegram Handle
+
+Button Background Color 1: Change background to #FF9900
+Button Background Color 2: Change background to #7B2CF1
+
+(Note: Use Javascript DOM for this question. DO NOT use jQuery for this else
+marks will be deducted.)
+    </pre>
+
+    <!--Profile Details-->
+    <div id="profileContainer">
+        <div id="name">Full Name : Steven Tan</div>
+        <div id="email">Email : <a href="mailto:steven.tan@gmail.com">steven.tan@gmail.com</a></div>
+        <div id="phone">Phone : 93851853</div>
+        <div id="telegram">Telegram : @steve.tan</div>
+    </div>
+    <br/>
+    <div id="bgCurrent"></div> <!--Additional notice for notifying background change-->
+
+    <!--Toggle Buttons-->
+    <div class="btn-group-vertical gap-2">
+    <button type="button" class="btn btn-warning" onclick="nameToggle()"><span class="buttonlabel">Show/Hide First Name & Last Name</span></button>
+    <button type="button" class="btn btn-warning" onclick="emailToggle()"><span class="buttonlabel">Show/Hide Email</button>
+    <button type="button" class="btn btn-warning" onclick="phoneToggle()"><span class="buttonlabel">Show/Hide Phone Number</span></button>
+    <button type="button" class="btn btn-warning" onclick="telegramToggle()"><span class="buttonlabel">Show/Hide Telegram Handle</span></button>
+    <br/>
+    <button type="button" class="btn btn-warning" id="bgOrange" onclick="bgOrange()"><span class="buttonlabel">Change background color 1</span></button>
+    <button type="button" class="btn btn-warning" id="bgPurple" onclick="bgPurple()"><span class="buttonlabel">Change background color 2</span></button>
+    </div>
+    
+    <!--Scripts: Bootstrap and external-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FS102 Workbook 2 - Lam Man Kid</title>
+    <!--Bootstrap CSS, icons CDN and external css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+    <h1>Question 8</h1>
+    <pre>
+Steve has made a new friend! Together they decide to head over to the
+cinema to check out the brand new premier of “Steve To The Rescue”. Create
+a program that shows the seating arrangement and if the seat has already
+been taken.
+Above the seating arrangement, indicate the current booking status to
+“Unbooked”.
+On mouse over of individual seats, the current status of the seat will be shown
+above. If the seat has already been taken, the seat should be in grey and on
+mouse over current status should show “Taken”.
+Selection of an available seat will change the seat color to green. Upon
+selecting 2 seats, change booking status to “Booked”. And both seats should
+be in grey.
+    </pre>
+
+    <!--All HTML elements required to render the cinema seating floor plan-->
+    <div class="container bg-light">
+        <h3 class="py-4 text-center">Seating Plan For "Steven To The Rescue" <i class="bi bi-camera-reels-fill text-dark"></i></h3>   <!--Header-->
+        <div class="row text-center align-items-center justify-content-center pb-5">
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1"></div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10 fw-bold bg-info bg-gradient text-center text-white">Screen</div>   <!--Screen-->
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1"></div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1"></div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10 seatnum">1 2 3 4 5 6 7 8 9 10 11 12</div>   <!--Number Row-->
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1"></div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold text-end">A</div>   <!--Letters Column start A end J-->
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10">                          <!--Row of 12 bootstrap icons representing seats-->
+            <i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i>
+        </div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1"></div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold text-end">B</div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10">
+            <i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i>
+        </div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1"></div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold text-end">C</div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10">
+            <i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i>
+        </div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1" id="selectmsg">Please select 2 seats</div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold text-end">D</div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10">    <!--Some taken seats here as placeholder-->
+            <i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill taken" data-toggle="tooltip" data-placement="top" title="Taken"></i><i class="bi bi-file-person-fill taken" data-toggle="tooltip" data-placement="top" title="Taken"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i>
+        </div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1">    <!--Booking Progress-->
+            <div class="progress">
+                <div class="progress-bar bg-dark" role="progressbar" id="progressnum" style="width: 33%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0 Selected</div>
+                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" id="progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>    
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold text-end">E</div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10">
+            <i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i>
+        </div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1">Booking Status:</div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold text-end">F</div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10">
+            <i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i>
+        </div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold border border-dark border-2 rounded-pill" id="bookStatus">Unbooked</div>     <!--Booking status display-->
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold text-end">G</div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10">   <!--Some taken seats here as placeholder-->
+            <i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill taken" data-toggle="tooltip" data-placement="top" title="Taken"></i><i class="bi bi-file-person-fill taken" data-toggle="tooltip" data-placement="top" title="Taken"></i><i class="bi bi-file-person-fill taken" data-toggle="tooltip" data-placement="top" title="Taken"></i><i class="bi bi-file-person-fill taken" data-toggle="tooltip" data-placement="top" title="Taken"></i>
+        </div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1" id="specialmsg"></div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold text-end">H</div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10">   <!--Some taken seats here as placeholder-->
+            <i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill taken" data-toggle="tooltip" data-placement="top" title="Taken"></i><i class="bi bi-file-person-fill taken" data-toggle="tooltip" data-placement="top" title="Taken"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i>
+        </div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1"></div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold text-end">I</div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10">
+            <i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i>
+        </div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1"></div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1 fw-bold text-end">J</div>
+        <div class="col-4 col-xl-4 col-lg-6 col-xs-10">
+            <i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i><i class="bi bi-file-person-fill seat" data-toggle="tooltip" data-placement="top" title="Available"></i>
+        </div>
+        <div class="col-4 col-xl-4 col-lg-3 col-xs-1"></div>
+        <!--Reset button-->
+        <button type="button" class="btn btn-primary mt-4 w-25" onClick="window.location.href=window.location.href">Reset Selection</button>
+    </div>
+    
+    <!--Scripts: Bootstrap, jQuery and external-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
