@@ -1,0 +1,195 @@
+/* CSS for alert message box */
+.alertbox {
+    background-color: #DBFF00;
+    border-color: black;
+    border-style: dotted;
+    border-width: 3px;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    margin-bottom: 15px;
+    padding: 20px;
+    text-align: center;
+    transition-duration: 2s;
+}
+  .closebtn {
+    color: black;
+    cursor: pointer;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-left: 15px;
+    transition:0.3s;
+  }
+  .closebtn:hover {
+    color: black;
+  }
+
+/*wrapper for whole page. The special font will be called using link in each page header.*/
+.pagewrapper {
+    border-color: #00FFE0;
+    border-style: solid;
+    border-width: 1.5px;
+    font-family: 'Electrolize', sans-serif;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 15px;
+}
+
+/*header top navigator area*/
+.headerboard {
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    justify-content: space-between;
+    max-width: 95%;
+    text-align: center;
+}
+.logo {
+    background-color: white;
+    padding-left: 50px;
+}
+.headerbar {
+    background-color: black;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: white;
+    font-weight:normal;
+    padding:20px 30px;
+}
+.headerbar:hover, .headerbar:active {
+    background-color: #00FFE0;
+    color: black;
+}
+.headerbar a:link {
+    color:white;
+    text-decoration: none;
+}
+.headerbar a:visited {
+    color:rgb(51, 236, 51);
+}
+.headerbar a:hover, .headerbottombar a:active {
+    color: black;
+}
+.icon {
+    background-color:white;
+}
+.icon:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+hr {
+    border-top: 1px solid black;
+}
+
+/*header bottom bar area*/
+.headerbottom {
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: bold;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.headerbottombar:hover, .headerbottombar:active {
+    color: #00FFE0;
+    text-shadow: 2px 2px 8px black;
+}
+.headerbottombar a:link {
+    color: black;
+    text-decoration: none;
+}
+.headerbottombar a:visited {
+    color:rgb(51, 236, 51);
+}
+.headerbottombar a:hover, .headerbottombar a:active {
+    color: #00FFE0;
+    text-shadow: 2px 2px 8px black;
+}
+.order {
+    background-color:#00FFE0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:black;
+    padding:2px 8px;
+}
+.order:hover, .order:active {
+    color: #00FFE0;
+    text-shadow: 2px 2px 8px black;
+}
+.order a:link {
+    color: black;
+    text-decoration: none;
+}
+.order a:visited {
+    color:blueviolet;
+}
+.order a:hover, .order a:active {
+    border-radius: 12px;
+    color:white;
+}
+
+/*wrapper for entire body area*/
+.bodywrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(22, minmax(1em, auto));
+    max-width: 100%;
+    text-align: center;
+}
+.header {
+    font-size: 300%;
+    font-weight: bold;
+    padding-top:50px;
+}
+.phoneimage img {
+    height:auto;
+    width: 100%;
+}
+.video iframe {
+    width: 100%;
+}
+.para {
+    column-gap:100px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(1em, auto));
+    grid-template-rows: repeat(2, minmax(1em, auto));
+    padding:50px 50px 50px 50px;
+    row-gap:50px;
+}
+
+/*wrapper for the footer area*/
+.footerwrapper {
+    align-items: center;
+    background-color: black;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: bold;
+    height:auto;
+    justify-content:space-between;
+    max-width: 100%;
+    padding: 20px 200px 20px 200px;
+    row-gap: 20px;
+    text-align: center;
+}
+.footerwrapper a:link {
+    color: white;
+    text-decoration: none;
+}
+.footerwrapper a:visited {
+    color:blueviolet;
+}
+.footerwrapper a:hover, .footerwrapper a:active {
+    border-radius: 12px;
+    color:#00FFE0;
+}
+.copyright {
+    color:#00FFE0;
+    padding-left: 12%;
+}

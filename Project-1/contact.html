@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Contact Page - Lam Man Kid</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/css/checkout-confirm.css" type="text/css">
+    <!--linking to the above CSS files as the design is very similar-->
+</head>
+<body>
+    <!--wrapper or container for whole webpage-->
+    <div class="pagewrapper">
+
+        <!--flex container for top header area-->
+        <div class="headerboard">
+            <div class="logo"><a href="/index.html" id="top"><img src="/images/AlienPhoneLogo.png" alt="alien phone logo"></a></div>
+            <div></div>
+            <div></div>
+            <div class="headerbar"><a href="/products.html">Ultra Gaming Phone</a></div>
+            <div class="headerbar"><a href="/products.html">Accessories</a></div>
+            <div class="headerbar"><a href="/brand.html">Our Brand</a></div>
+            <div></div>
+            <div></div>
+            <div class="current"><img src="/images/inquiry.png" alt="inquiry icon"></div>
+            <div class="icon"><a href="/checkout.html"><img src="/images/cart.png" alt="cart icon"></a></div>
+        </div>
+
+        <!--line break as an effect for bottom header-->
+        <hr/>
+
+        <!--flex container for bottom header area-->
+        <div class="headerbottom">
+            <div class="headerbottombar"><a href="/productpages/mothershipmiii.html">Mothership MIII</a></div>
+            <div></div>
+            <div>|</div>
+            <div>Contact Us</div>
+            <div>|</div>
+            <div></div>
+            <div class="order"><a href="/productpages/mothershipmiii.html">Order</a></div>
+        </div>
+        <hr/>
+
+        <!--grid wrapper for main body-->
+        <div class="bodywrapper">
+            <div class="phoneimage"><img src="/images/checkout.jpg" alt="best gaming phone"></div>
+            <div class="header"><a id="team">CONTACT US</a></div>
+            <p>Do you have any queries, issues or feedback? Please feel to contact us using the form below.</p>
+            <p>We strive to reply to all messages within 3 business days.</p>
+            <!--container for form-->
+            <div class="formcontainer">
+                <span class="subheader">Contact Form:</span>
+                <!--start of form-->
+                <form action="/msgconfirmation.html">
+                    <label for="subject">Subject of Message:</label>
+                    <div>
+                        <select name='subject' id='subject' required>
+                        <option value=''>Subject</option>
+                        <option value='Ord'>Orders</option>
+                        <option value='Pro'>Products</option>
+                        <option value='Gen'>General Inquiries</option>
+                        <option value='Tro'>Troubleshooting</option>
+                        <option value='Oth'>Others</option>
+                        </select> 
+                        <select name='type' id='type' required>
+                        <option value=''>Type of issue</option>
+                        <option value='Shi'>Shipping</option>
+                        <option value='Pay'>Payment</option>
+                        <option value='Ret'>Return/Refunds</option>
+                        <option value='Buy'>Buying/Selling</option>
+                        <option value='Com'>Complaints</option>
+                        <option value='Fee'>Feedbacks</option>
+                        <option value='Tec'>Technical Issues</option>
+                        <option value='Inv'>Investor Relations</option>
+                        <option value='Med'>Media Inquiries</option>
+                        <option value='Bus'>Business Related</option>
+                        </select> 
+                    </div>
+                    <label for="name">Name:</label>
+                    <input class="name" type="text" id="name" placeholder="Enter name" required>
+                    <label for="email">Email:</label>
+                    <input class="email" type="email" id="email" placeholder="Enter email" required>
+                    <label for="contactno">Contact Number:</label>
+                    <input class="contactno" type="tel" id="contactno" placeholder="Enter number" required>
+                    <div>
+                        <label for="ordernum">Order Number:</label>
+                        <div>(If applicable)</div>
+                    </div>
+                    <div>
+                        <input class="ordernum" type="tel" id="ordernum" placeholder="Order number">
+                        <div></div>
+                    </div>
+                    <div>
+                        <label for="additional">Additional Information:</label>
+                        <div>(If applicable)</div>
+                    </div>
+                    <textarea class="additional" id="additional" name="additional" rows="5" placeholder="Type here"></textarea>
+                    <div></div>
+                    <div></div>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </form>
+            </div>
+        </div>
+         
+        <!--flex container for the whole footer area-->
+        <div class="footerwrapper">
+            <div><a href="#top">Back to top</a></div>
+            <div>|</div>
+            <div>Terms & Conditions</div>
+            <div>|</div>
+            <div>Privacy Policy</div>
+            <div>|</div>
+            <div>Follow us on social media</div>
+            <div>|</div> 
+            <div>Contact Us</div>   
+            <div class="copyright">Copyright © 2021 Alien Phone Inc. All rights reserved. All trademarks, logos, brand names, product names and designs are the property of Alien Phone Inc.</div>
+        </div>
+    </div>
+</body>
+</html>

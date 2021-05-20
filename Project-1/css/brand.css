@@ -1,0 +1,51 @@
+/*slight modification to header area specific for brand page*/
+.headerbottom {
+    column-gap: 50px;
+    justify-content:flex-start;
+}
+.para {
+    background-color: lightblue;
+    column-gap:50px;
+    grid-template-rows: repeat(8, minmax(1em, auto));
+    justify-self: center;
+    margin-bottom: 4em;
+    margin-top: 2em;
+    max-width: 70%;
+    padding:50px 50px 50px 50px;
+    row-gap:20px;
+}
+.current {
+    background-color: #DBFF00;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: black;
+    font-weight:normal;
+    padding:20px 30px;
+    transition-duration: 2s;
+}
+/*slight modification to body area specific for brand page*/
+.bodywrapper {
+    grid-template-rows: repeat(3, minmax(1em, auto));
+}
+.productname {
+    font-size:15pt;
+    font-style: italic;
+    font-weight: bold;
+}
+.staffname {
+    font-size:18pt;
+}
+.staffname a:link {
+    color:red;
+}
+.staffname a:visited {
+    color:white;
+}
+.phoneimage img {
+    float: left;
+}
+p {
+    font-size:14pt;
+    padding-left: 15%;
+    padding-right: 15%;
+}
